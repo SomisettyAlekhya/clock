@@ -1,0 +1,80 @@
+body{
+    justify-content: center;
+    align-items: center;
+    display:flex;
+    height:100vh;
+    padding-left:20px;
+    padding-right: 35px;
+}
+img{
+    width:70px;
+    position: absolute;
+    left : 43%;
+    top:70px;
+    background: none;
+}
+.clock{
+    background: linear-gradient(yellow,orange);
+    width:450px;
+    height: 400px;
+    border-radius: 50%;
+    border:5px solid darkgrey;
+    box-shadow: 1px 1px 4px black;
+    position: relative;
+}
+.numbers div{
+    position: absolute;
+    font-size: 30px;
+    font-weight: bold;
+    color:gray;
+    
+}
+.Twelve{
+    left:46%;
+}
+.Three{
+    right:10%;
+    top:44%;
+}
+.Six{
+    bottom:10%;
+    left:49%;
+}
+.Nine{
+   left:10%;
+   top:44%; 
+}
+.arrows{
+    width:100%;
+    height:100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.arrows::before{
+    content:"";
+    width:30px;
+    height:35px;
+    background-color: darkcyan;
+    border-radius: 50%;
+
+}
+.arrows div{
+    background-color: white;
+    width:8px;
+    position: absolute;
+    height:120px;
+    transform-origin: bottom center;
+    bottom: 50%;
+    z-index: 3;
+    border-radius: 50% 50% 0 0;
+    box-shadow: 1ps 1px 2px black;
+}
+.arrows .hour{
+    height:80px;
+    transform:rotate(60deg);
+}
+.arrows .second{
+    transform: rotate(250deg);
+    background-color: goldenrod;
+}
